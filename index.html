@@ -9,12 +9,24 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+		<style type="text/css">#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}</style>
+
 <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	</head>
 	<body>
 		<div class="site-container">
 			<header class="site-header">
-				<h1>Jamie Smith LOVES Becky</h1>
+				<h1>Jamie Smith</h1>
 			</header>
 			<div class="menu-bar">
 			<ul> 
@@ -24,15 +36,16 @@
 			<li> Misc</li>
 			</div>
 			<main class="site-content">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="images/cats.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="images/cats.jpg" alt="GTA V"></div>
+  <div class="item"><img src="images/cats.jpg" alt="Mirror Edge"></div>
+ 
+</div>
 			<!-- <div class="scroll-images">
 			<img class="placeholder" src="./images/cats.jpg">
 			</div> -->
-
-			<div class="carousel">
-  			<div>your content</div>
- 			 <div>your content</div>
-  			<div>your content</div>
-			</div>
 			<div class="about-text">
 
 			</div>
@@ -44,7 +57,27 @@
 				&copy; 2016
 			</footer>
 		</div><!-- .site-container -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="owl-carousel/owl.carousel.min.js"></script>
+		<script type="text/javascript">
+			console.log('it works');
+
+			$(document).ready(function() {
+
+				$("#owl-demo").owlCarousel({
+ 
+				      autoPlay: 3000, //Set AutoPlay to 3 seconds
+				 
+				      items : 4,
+				      itemsDesktop : [1199,3],
+				      itemsDesktopSmall : [979,3]
+				 
+				  });
+
+			});
+		</script>
+	
+
+
 	</body>
 </html>

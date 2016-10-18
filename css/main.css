@@ -133,3 +133,10 @@ owl-prev, .owl-next {
 	/*background-color: red;*/
 	padding: 10px;
 }
+
+.virgin-image{
+	float:right;
+	width: 320px;
+	height:250px;
+
+}

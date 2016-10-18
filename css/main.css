@@ -117,3 +117,19 @@ li {
     height: auto;
 }
 
+owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-text{
+	height:auto;
+	width: auto;
+	/*background-color: red;*/
+	padding: 10px;
+}
